@@ -1,0 +1,12 @@
+PODS:
+  - ViewDeck (3.1.0)
+
+DEPENDENCIES:
+  - ViewDeck (~> 3.1.0)
+
+SPEC CHECKSUMS:
+  ViewDeck: 942d90dd23c9f97cc8038be352255378167edcca
+
+PODFILE CHECKSUM: 20479d84085ffe41f53ecb534c6fefeeb1aeacfc
+
+COCOAPODS: 1.1.0.beta.1

@@ -1,0 +1,6 @@
+framework module Pods_NextBox {
+  umbrella header "Pods-NextBox-umbrella.h"
+
+  export *
+  module * { export * }
+}
