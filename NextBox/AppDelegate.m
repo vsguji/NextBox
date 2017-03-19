@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+//#define DD_LEGACY_MACROS 1 
+#import <CocoaLumberjack/CocoaLumberjack.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    
     return YES;
 }
 

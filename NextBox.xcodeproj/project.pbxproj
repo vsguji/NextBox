@@ -15,6 +15,8 @@
 		E83F34A81E7E365300AA1189 /* NextBox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E83F34A61E7E365300AA1189 /* NextBox.xcdatamodeld */; };
 		E83F34AA1E7E365300AA1189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83F34A91E7E365300AA1189 /* Assets.xcassets */; };
 		E83F34AD1E7E365300AA1189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83F34AB1E7E365300AA1189 /* LaunchScreen.storyboard */; };
+		E83F34B71E7E64DF00AA1189 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E83F34B61E7E64DF00AA1189 /* CocoaLumberjack.framework */; };
+		E83F34B91E7E64FA00AA1189 /* ViewDeck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E83F34B81E7E64FA00AA1189 /* ViewDeck.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		E83F34A91E7E365300AA1189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E83F34AC1E7E365300AA1189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E83F34AE1E7E365300AA1189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E83F34B61E7E64DF00AA1189 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = "../../Library/Developer/Xcode/DerivedData/NextBox-dpznsrulyxlcmkehbmowrlvxczmr/Build/Products/Debug-iphoneos/CocoaLumberjack/CocoaLumberjack.framework"; sourceTree = "<group>"; };
+		E83F34B81E7E64FA00AA1189 /* ViewDeck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ViewDeck.framework; path = "../../Library/Developer/Xcode/DerivedData/NextBox-dpznsrulyxlcmkehbmowrlvxczmr/Build/Products/Debug-iphoneos/ViewDeck/ViewDeck.framework"; sourceTree = "<group>"; };
 		FB55EFA45F1E78538B2F0D08 /* Pods_NextBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -39,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E83F34B91E7E64FA00AA1189 /* ViewDeck.framework in Frameworks */,
+				E83F34B71E7E64DF00AA1189 /* CocoaLumberjack.framework in Frameworks */,
 				3038CA15DB94734731F8D91B /* Pods_NextBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +55,8 @@
 		0061149E375067C1FAB65F63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E83F34B81E7E64FA00AA1189 /* ViewDeck.framework */,
+				E83F34B61E7E64DF00AA1189 /* CocoaLumberjack.framework */,
 				FB55EFA45F1E78538B2F0D08 /* Pods_NextBox.framework */,
 			);
 			name = Frameworks;
@@ -140,6 +148,7 @@
 				TargetAttributes = {
 					E83F34961E7E365300AA1189 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9N24P72S89;
 					};
 				};
 			};
@@ -343,6 +352,8 @@
 			baseConfigurationReference = D5CE16FBF03351ACCECD04DE /* Pods-NextBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = NextBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = peng.NextBox;
@@ -355,6 +366,8 @@
 			baseConfigurationReference = 9BFD50EB338869216D98EAA1 /* Pods-NextBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = NextBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = peng.NextBox;
